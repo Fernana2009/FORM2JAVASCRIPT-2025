@@ -1,0 +1,76 @@
+/* ===== PERFIL DE USUARIO ===== */
+body {
+background: #eef0ff;
+font-family: "Poppins", sans-serif;
+padding: 0;
+margin: 0;
+}
+
+
+.header-user {
+background: linear-gradient(90deg, #5b6bff, #8b37ff);
+padding: 20px;
+color: white;
+display: flex;
+justify-content: center;
+}
+
+
+.perfil-container {
+width: 85%;
+margin: 40px auto;
+background: #fff;
+padding: 34px;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.perfil-header {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+
+.perfil-header img {
+width: 110px;
+height: 110px;
+border-radius: 50%;
+border: 4px solid #6f4dff;
+}
+
+
+.perfil-header h2 {
+font-size: 26px;
+font-weight: 700;
+}
+
+
+.info-user {
+margin-top: 30px;
+}
+
+
+.info-user p {
+font-size: 17px;
+padding: 10px 0;
+border-bottom: 1px solid #ddd;
+}
+
+
+.btn-editar {
+margin-top: 25px;
+padding: 12px 20px;
+border: none;
+border-radius: 10px;
+background: linear-gradient(90deg, #5177ff, #7e3aff);
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+.btn-editar:hover {
+opacity: .9;
+}
