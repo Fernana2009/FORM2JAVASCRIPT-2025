@@ -1,80 +1,128 @@
-/* ===== FORMULARIO DE REGISTRO ===== */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo de la página */
 body {
-background: linear-gradient(135deg, #6a5acd, #8a4fd7);
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
 }
 
-
-.contenedor-registro {
-background: white;
-width: 450px;
-padding: 40px;
-border-radius: 15px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+/* Contenedor del formulario */
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
 }
 
-
-.contenedor-registro h2 {
-text-align: center;
-font-size: 28px;
-margin-bottom: 25px;
-font-weight: 700;
+/* Caja de registro */
+.registro-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-
-label {
-font-weight: 600;
-margin: 8px 0 5px;
-display: block;
+/* Título */
+.registro-box h1 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #333;
 }
 
-
-input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border-radius: 8px;
-border: 1.5px solid #cccccc;
-transition: .2s;
+/* Grupos de input */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-
-input:focus {
-border-color: #754bff;
-outline: none;
-box-shadow: 0 0 5px rgba(117, 75, 255, .5);
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
 }
 
-
-.btn-registrar {
-width: 100%;
-padding: 13px;
-background: linear-gradient(90deg, #5177ff, #7e3aff);
-color: white;
-border: none;
-border-radius: 8px;
-font-weight: bold;
-cursor: pointer;
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-
-.btn-registrar:hover {
-opacity: .9;
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #185a9d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(24, 90, 157, 0.5);
 }
 
-
-.text-login {
-margin-top: 18px;
-text-align: center;
+.input-group small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #888;
 }
 
+/* Botón */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #185a9d;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-.text-login a {
-color: #4e32ff;
-font-weight: bold;
-text-decoration: none;
+button[type="submit"]:hover {
+  background-color: #43cea2;
+}
+
+/* Mensaje de error o aviso */
+.mensaje {
+  margin-top: 15px;
+  font-size: 14px;
+  color: red;
+  min-height: 18px;
+}
+
+/* Enlace para iniciar sesión */
+.login-link {
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #185a9d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login-link a:hover {
+  color: #43cea2;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 500px) {
+  .registro-box {
+    padding: 30px 20px;
+  }
+
+  .registro-box h1 {
+    font-size: 22px;
+  }
 }
